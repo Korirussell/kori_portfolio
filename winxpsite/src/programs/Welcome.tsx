@@ -16,10 +16,10 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/types";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import userprofile from "../../assets/userprofile.jpg";
+import userprofile from "../../assets/userprofile.jpeg";
 import userprofile2 from "../../assets/userprofile2.jpg";
 import ebc1 from "../../assets/ebc1.jpeg";
-import ebc2 from "../../assets/ebc2.jpg";
+import ebc2 from "../../assets/ebc2.jpeg";
 
 const INTRO = `Hi, I'm Kori Russell, a Computer Science student at the University of Alabama based in 
   Tuscaloosa, AL. I'm passionate about distributed systems, web development, and building innovative 

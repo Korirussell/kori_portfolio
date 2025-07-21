@@ -176,3 +176,82 @@
   border-radius: 3px;
   margin-right: 3px;
 }
+
+/* Mobile responsiveness for Start Menu */
+@media (max-width: 768px) {
+  .startmenu {
+    width: 95vw;
+    height: 80vh;
+    left: 2.5vw;
+    bottom: 45px;
+  }
+  
+  .menutopbar {
+    height: 15%;
+    padding: 8px 5px 5px;
+  }
+  
+  .menu {
+    height: 75%;
+  }
+  
+  .menubtmbar {
+    height: 10%;
+  }
+  
+  .leftmenu, .rightmenu {
+    font-size: 14px;
+  }
+  
+  .allprograms {
+    height: 35px;
+    margin: 5px;
+    font-size: 14px;
+  }
+  
+  .systemBtn {
+    font-size: 11px;
+    margin: 0px 3px;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .startmenu {
+    width: 100vw;
+    height: 75vh;
+    left: 0;
+    bottom: 40px;
+    border-radius: 0;
+  }
+  
+  .menutopbar {
+    height: 12%;
+    padding: 5px;
+    border-radius: 0;
+  }
+  
+  .menu {
+    height: 78%;
+  }
+  
+  .menubtmbar {
+    height: 10%;
+  }
+  
+  .leftmenu, .rightmenu {
+    font-size: 12px;
+  }
+  
+  .allprograms {
+    height: 30px;
+    margin: 3px;
+    font-size: 12px;
+  }
+  
+  .systemBtn {
+    font-size: 10px;
+    margin: 0px 2px;
+    padding: 2px;
+  }
+}

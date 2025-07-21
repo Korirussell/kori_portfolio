@@ -103,3 +103,60 @@
     width: 270px;
   }
 }
+
+/* Mobile responsiveness for StartBar */
+@media screen and (max-width: 768px) {
+  .bluebar {
+    height: 45px;
+    padding: 0 5px;
+  }
+  
+  .startbtn, .startbtn_active {
+    width: 100px;
+    height: 40px;
+    background-size: contain;
+  }
+  
+  .icontray {
+    width: 150px;
+    padding: 8px;
+  }
+  
+  .tabbar {
+    width: 70%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .tabbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bluebar {
+    height: 40px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  
+  .startbtn, .startbtn_active {
+    width: 80px;
+    height: 35px;
+    min-width: 80px;
+  }
+  
+  .icontray {
+    width: 120px;
+    padding: 5px;
+  }
+  
+  .tabbar {
+    width: 60%;
+  }
+  
+  .iconrow {
+    width: 70px;
+  }
+}

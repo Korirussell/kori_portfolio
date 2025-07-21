@@ -69,12 +69,13 @@ import mr2 from "../../assets/mr2.jpg";
 import mrIcon from "../../assets/mr_icon.png";
 import MS from "../../assets/work/MS.png";
 import MS2 from "../../assets/work/MS2.png";
-import col1 from "../../assets/gallery/0.jpg";
-import col2 from "../../assets/gallery/1.jpg";
-import col3 from "../../assets/gallery/2.jpg";
-import col4 from "../../assets/gallery/3.jpg";
-import col5 from "../../assets/gallery/4.jpg";
-import col6 from "../../assets/gallery/5.jpg";
+import col1 from "../../assets/gallery/DSC_1349.jpg";
+import col2 from "../../assets/gallery/DSC_1544.jpg";
+import col3 from "../../assets/gallery/DSC_1560.jpg";
+import col4 from "../../assets/gallery/DSC_1573.jpg";
+import col5 from "../../assets/gallery/IMG_2166.jpeg";
+import hackathon1 from "../../assets/work/ua_hackathon2025/DSC_0687.jpeg";
+import hackathon2 from "../../assets/work/ua_hackathon2025/IMG_4611.jpg";
 export const TechIcon = {
   REACT:
     "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
@@ -303,7 +304,7 @@ export const WorkData = [
       TechIcon.PYTHON,
       TechIcon.CHATGPT,
     ],
-    gallery: [],
+    gallery: [hackathon1, hackathon2],
     overview: `Won 1st Place in Fintech Category at UA Innovate Hackathon by delivering a complete AI-powered
     banking MVP within 22 hours, competing against 50+ teams. Led full-stack development of gamified savings 
     tracker using React/Next.js frontend integrated with Python/Flask backend and OpenAI API for personalized 
@@ -330,24 +331,7 @@ export const WorkData = [
     Developed scalable data extraction workflows processing 100GB+ of geospatial datasets, improving research 
     methodology efficiency by 75% for urban landscape analysis and contributing to peer-reviewed GIS publication.`,
   },
-  {
-    id: 4,
-    title: "Ultra Music Festival - Artist Logistics Platform",
-    date: "June 2022 - January 2023",
-    gitURL: "",
-    techstack: [
-      TechIcon.REACT,
-      TechIcon.JAVASCRIPT,
-      TechIcon.HTML,
-      TechIcon.CSS,
-      TechIcon.NODEJS,
-    ],
-    gallery: [],
-    overview: `Redesigned artist logistics platform UI/UX using React, improving mobile responsiveness by 60% and
-    reducing navigation time by 40% while supporting 10+ performing artists with 99.5% uptime during critical
-    performance windows. Collaborated with international teams in Seoul, South Korea to deliver mission-critical
-    event technology solutions for one of the world's largest electronic music festivals.`,
-  },
+
   {
     id: 5,
     title: "Windows XP Portfolio Website",
@@ -367,23 +351,7 @@ export const WorkData = [
     interactive, memorable format. Features responsive design, smooth animations, and authentic XP-style 
     components while maintaining accessibility and modern performance standards.`,
   },
-  {
-    id: 6,
-    title: "DoD Cybersecurity & Network Operations",
-    date: "January 2022 - June 2022",
-    gitURL: "",
-    techstack: [
-      TechIcon.PYTHON,
-      TechIcon.JAVASCRIPT,
-      TechIcon.SQL,
-    ],
-    gallery: [],
-    overview: `Monitored secure network operations covering 3,000+ military personnel, maintaining 99.9% network
-    uptime through proactive incident response and real-time threat detection. Configured enterprise Cisco router 
-    infrastructure and managed encrypted communications, supporting base-wide wireless deployment serving 1,500+ 
-    concurrent users. Gained hands-on experience in cybersecurity, network administration, and mission-critical 
-    system maintenance in a high-security environment.`,
-  },
+
 ] as WorkContent[];
 
 export const WorkAccordionContent = [
@@ -408,13 +376,7 @@ export const WorkAccordionContent = [
     title: "Web GIS Development - Research",
     content: WorkData[WorkData.findIndex((x) => x.id === 3)],
   },
-  {
-    id: 4,
-    type: WorkType.PERSONAL,
-    icon: emptyfile,
-    title: "Ultra Music Festival - Event Tech",
-    content: WorkData[WorkData.findIndex((x) => x.id === 4)],
-  },
+
   {
     id: 5,
     type: WorkType.PERSONAL,
@@ -422,63 +384,49 @@ export const WorkAccordionContent = [
     title: "Windows XP Portfolio Website",
     content: WorkData[WorkData.findIndex((x) => x.id === 5)],
   },
-  {
-    id: 6,
-    type: WorkType.SCHOOL,
-    icon: file,
-    title: "DoD Cybersecurity & Network Ops",
-    content: WorkData[WorkData.findIndex((x) => x.id === 6)],
-  },
+
 ] as WorkFile[];
 
 // For My Photography Collection
 export const PhotoCollection = [
   {
     id: 0,
-    title: "Portfolio Showcase",
-    location: "University of Alabama, Tuscaloosa",
-    desc: "Computer Science projects and development work",
-    date: "2024",
+    title: "My Village",
+    location: "Valkenberg, Netherlands",
+    desc: "Picture of Valkenberg, where I live with my family.",
+    date: "2025",
     img: col1,
   },
   {
     id: 1,
-    title: "Hackathon Victory",
-    location: "UA Innovate, Alabama",
-    desc: "1st Place winner in Fintech category",
+    title: "Woof",
+    location: "Valkenberg, Netherlands",
+    desc: "Awesome dog I spotted while hiking.",
     date: "2024",
     img: col2,
   },
   {
     id: 2,
-    title: "Development Environment",
-    location: "Tuscaloosa, AL",
-    desc: "Coding and software development setup",
-    date: "2024",
+    title: "Tree Tunnel",
+    location: "Valkenberg, Netherlands",
+    desc: "I love tree tunnels. I see tree tunnel I take picture.",
+    date: "2025",
     img: col3,
   },
   {
     id: 3,
-    title: "Campus Tech",
-    location: "University of Alabama",
-    desc: "Technology and computer science at UA",
-    date: "2024",
+    title: "Downtown Maastricht",
+    location: "Maastricht, Netherlands",
+    desc: "I spend alot of time in Maastricht over the weekends.",
+    date: "2025",
     img: col4,
   },
   {
     id: 4,
-    title: "Project Work",
-    location: "Tuscaloosa, AL",
-    desc: "Software engineering and development projects",
+    title: "River Thames",
+    location: "London, United Kingdom",
+    desc: "At the end of my study abroad at UCL, we had a boat party on the River Thames.",
     date: "2024",
     img: col5,
-  },
-  {
-    id: 5,
-    title: "Tech Innovation",
-    location: "Alabama",
-    desc: "Innovation in technology and software solutions",
-    date: "2024",
-    img: col6,
   },
 ] as GalleryImage[];

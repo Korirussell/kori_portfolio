@@ -178,3 +178,95 @@
   flex-direction: column;
   gap: 10px;
 }
+
+/* Mobile responsiveness for MyGallery */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .leftpanel {
+    width: 100%;
+    max-height: 200px;
+    padding: 8px;
+    order: 1;
+  }
+  
+  .rightpanel {
+    width: 100%;
+    order: 2;
+    height: auto;
+    min-height: 400px;
+  }
+  
+  .display_container {
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .control_container {
+    height: 35px;
+    gap: 8px;
+  }
+  
+  .slider_container {
+    height: auto;
+    min-height: 120px;
+    padding: 10px 0;
+  }
+  
+  .slider {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  
+  .accordion_title {
+    height: 30px;
+    padding: 0 8px;
+  }
+  
+  .title_text {
+    font-size: 11px;
+  }
+  
+  .image_detail {
+    gap: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leftpanel {
+    max-height: 150px;
+    padding: 5px;
+  }
+  
+  .display_container {
+    height: 250px;
+  }
+  
+  .control_container {
+    height: 30px;
+    gap: 5px;
+  }
+  
+  .slider_container {
+    min-height: 100px;
+    padding: 8px 0;
+  }
+  
+  .accordion_title {
+    height: 25px;
+    padding: 0 5px;
+  }
+  
+  .title_text {
+    font-size: 10px;
+  }
+  
+  .image_detail {
+    font-size: 11px;
+  }
+}

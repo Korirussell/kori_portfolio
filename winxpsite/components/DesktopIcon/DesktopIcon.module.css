@@ -68,3 +68,62 @@
   background-color: rgba(0, 0, 255, 0.3);
   border-radius: 3px;
 }
+
+/* Mobile responsiveness for Desktop Icons */
+@media (max-width: 768px) {
+  .icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+    float: left;
+  }
+  
+  .iconimage, .iconimage_selected {
+    top: 5px;
+    left: 10px;
+    right: 10px;
+  }
+  
+  .iconimage img, .iconimage_selected img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .iconlabel, .iconlabel_selected {
+    top: 60px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 15px;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    width: 90px;
+    height: 90px;
+    margin: 8px;
+  }
+  
+  .iconimage img, .iconimage_selected img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .iconlabel, .iconlabel_selected {
+    top: 55px;
+    font-size: 12px;
+    height: 25px;
+  }
+}
+
+/* Improve touch targets on mobile */
+@media (hover: none) and (pointer: coarse) {
+  .icon {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

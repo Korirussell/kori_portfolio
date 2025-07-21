@@ -77,6 +77,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  cursor: url("../../assets/windows-xp-1/default_arrow.cur"), auto;
 }
 
 html,
@@ -103,5 +104,34 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+  /* Ensure mobile viewport is properly handled */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  /* Make touch targets larger for mobile */
+  * {
+    cursor: default; /* Remove custom cursor on mobile for better performance */
+  }
+  
+  /* Hide the custom cursor on touch devices */
+  @media (hover: none) and (pointer: coarse) {
+    * {
+      cursor: default !important;
+    }
+  }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Tablet-specific styles */
+  * {
+    cursor: url("../../assets/windows-xp-1/default_arrow.cur"), auto;
   }
 }

@@ -175,3 +175,73 @@
   opacity: 0.85;
   filter: brightness(80%);
 }
+
+/* Mobile responsiveness for Windows */
+@media (max-width: 768px) {
+  .window {
+    height: 90vh;
+    max-height: 90vh;
+    width: 95vw;
+    max-width: 95vw;
+    position: fixed;
+    top: 5vh;
+    left: 2.5vw;
+    right: 2.5vw;
+  }
+  
+  .titlebar, .titlebar_unfocused {
+    height: 40px;
+    padding: 0 8px;
+  }
+  
+  .title {
+    font-size: 16px;
+    margin-left: 8px;
+  }
+  
+  .minimise, .resize, .maximise, .close {
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+  }
+  
+  .windowsbody {
+    height: calc(100% - 40px);
+    overflow-y: auto;
+  }
+  
+  .windowborder, .windowborder_unfocused {
+    padding: 0 2px 2px 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .window {
+    height: 95vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100vw;
+  }
+  
+  .titlebar, .titlebar_unfocused {
+    height: 35px;
+    padding: 0 5px;
+  }
+  
+  .title {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .minimise, .resize, .maximise, .close {
+    width: 25px;
+    height: 25px;
+    margin-right: 1px;
+  }
+  
+  .windowsbody {
+    height: calc(100% - 35px);
+  }
+}
