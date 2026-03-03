@@ -41,6 +41,7 @@ export enum WorkType {
   PERSONAL = "Personal Projects",
   SCHOOL = "Research Projects",
   HACKATHON = "Hackathons",
+  WORK = "Work Experience",
 }
 
 export type WorkFile = {

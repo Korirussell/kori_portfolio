@@ -77,73 +77,32 @@ import col5 from "../../assets/gallery/IMG_2166.jpeg";
 import hackathon1 from "../../assets/work/ua_hackathon2025/DSC_0687.jpeg";
 import hackathon2 from "../../assets/work/ua_hackathon2025/IMG_4611.jpg";
 export const TechIcon = {
-  REACT:
-    "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
-  NEXTJS:
-    "https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white",
-  FIREBASE:
-    "https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase",
-  TYPESCRIPT:
-    "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
-  FIGMA:
-    "https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white",
-  NODEJS:
-    "https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white",
-  GOOGLECLOUDFUNCTIONS:
-    "https://img.shields.io/badge/gCloud_Functions-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white",
+  PYTHON: "https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white",
   JAVA: "https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white",
-  FLUTTER:
-    "https://img.shields.io/badge/flutter-%2302569B.svg?style=for-the-badge&logo=flutter&logoColor=white",
-  VERILOG:
-    "https://img.shields.io/badge/Verilog-%23F7DF1E.svg?style=for-the-badge&logo=verilog&logoColor=rgb(142%2C0%2C39)",
-  PYTHON:
-    "https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white",
-  C: "https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white",
-  CPP: "https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&ogoColor=white",
-  ROS: "https://img.shields.io/badge/ROS-%23000000.svg?style=for-the-badge&logo=ros&logoColor=white",
-  ARDUINO:
-    "https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white",
+  SWIFT: "https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white",
+  GO: "https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white",
+  TYPESCRIPT: "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
+  CPP: "https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white",
+  SQL: "https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white",
   HTML: "https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
   CSS: "https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
-  JAVASCRIPT:
-    "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
-  RASPBERRYPI:
-    "https://img.shields.io/badge/Raspberry%20Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi",
-  REDUX:
-    "https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white",
-  MATERIALUI:
-    "https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white",
-  AUTOCAD:
-    "https://img.shields.io/badge/AutoCAD-0696D7?style=for-the-badge&logo=autodesk&logoColor=white",
-  MBOT: "https://img.shields.io/badge/Makeblock-FF7F00?style=for-the-badge&logo=makeblock&logoColor=white",
-  GOOGLECLOUD:
-    "https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white",
-  MONGODB:
-    "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
-  TELEGRAM:
-    "https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white",
-  VUEJS:
-    "https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D",
-  WEBPACK:
-    "https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=white",
-  SUPABASE:
-    "https://img.shields.io/badge/Supabase-1E2E3B?style=for-the-badge&logo=supabase&logoColor=white",
-  CHATGPT:
-    "https://img.shields.io/badge/chatGPT-74aa9c?logo=openai&logoColor=white",
-  R: "https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white",
-  SQL: "https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white",
+  JAVASCRIPT: "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
+  REACT: "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
+  NEXTJS: "https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white",
   SPRINGBOOT: "https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white",
-  EXPRESS: "https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white",
   FLASK: "https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white",
-  DJANGO: "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white",
-  WEBSOCKETS: "https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socket.io&logoColor=white",
-  MAVEN: "https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white",
-  OPENLAYERS: "https://img.shields.io/badge/OpenLayers-1F6B75?style=for-the-badge&logo=openlayers&logoColor=white",
-  TAILWIND: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
-  GOOGLEMAPS: "https://img.shields.io/badge/Google_Maps-4285F4?style=for-the-badge&logo=google-maps&logoColor=white",
-  GEOPANDAS: "https://img.shields.io/badge/GeoPandas-139C5A?style=for-the-badge&logo=pandas&logoColor=white",
-  JSON: "https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white",
+  FASTAPI: "https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white",
+  NODEJS: "https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white",
+  POSTGRESQL: "https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white",
+  MONGODB: "https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white",
+  REDIS: "https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white",
+  AWS: "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white",
+  GCP: "https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white",
   DOCKER: "https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white",
+  GIT: "https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white",
+  LINUX: "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black",
+  SUPABASE: "https://img.shields.io/badge/Supabase-1E2E3B?style=for-the-badge&logo=supabase&logoColor=white",
+  TAILWIND: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
 };
 
 export const AppDirectory: Map<number, Tab> = new Map([
@@ -262,6 +221,7 @@ export const AppDirectory: Map<number, Tab> = new Map([
 ]);
 
 export const WorkAccordionTitles = [
+  WorkType.WORK,
   WorkType.HACKATHON,
   WorkType.PERSONAL,
   WorkType.SCHOOL,
@@ -272,119 +232,151 @@ export const GalleryAccordionTitles = ["Details"];
 export const WorkData = [
   {
     id: 1,
-    title: "Distributed Real-Time Chat System",
-    date: "2024",
+    title: "Tether",
+    date: "Aug 2025 - Present",
     gitURL: "",
-    techstack: [
-      TechIcon.JAVA,
-      TechIcon.WEBSOCKETS,
-      TechIcon.MAVEN,
-      TechIcon.HTML,
-      TechIcon.CSS,
-      TechIcon.JAVASCRIPT,
-      TechIcon.JSON,
-    ],
+    techstack: [TechIcon.SWIFT, TechIcon.SUPABASE, TechIcon.PYTHON, TechIcon.NEXTJS],
     gallery: [],
-    overview: `Engineered scalable distributed messaging architecture supporting multiple concurrent server nodes
-    with intelligent peer-to-peer message routing and loop prevention algorithms. Implemented concurrent WebSocket 
-    server handling 50+ simultaneous client connections using Java threading pools and ConcurrentHashMap for 
-    thread-safe operations. Designed custom JSON message protocol with origin tracking and built responsive web 
-    client interface with real-time message display and fault-tolerant networking across distributed nodes.`,
+    overview: `Founder & Software Engineer. Built location-based social productivity app using SwiftUI and Core Bluetooth, serving 150+ active university users. Engineered Supabase backend and FamilyControls integration to automate app blocking during focused study sessions.`,
   },
   {
     id: 2,
-    title: "Money Trees - AI-Powered Banking App (1st Place Winner)",
-    date: "2024",
+    title: "The University of Alabama",
+    date: "Apr 2025 - Aug 2025",
     gitURL: "",
-    techstack: [
-      TechIcon.NEXTJS,
-      TechIcon.JAVASCRIPT,
-      TechIcon.TAILWIND,
-      TechIcon.FLASK,
-      TechIcon.PYTHON,
-      TechIcon.CHATGPT,
-    ],
-    gallery: [hackathon1, hackathon2],
-    overview: `Won 1st Place in Fintech Category at UA Innovate Hackathon by delivering a complete AI-powered
-    banking MVP within 22 hours, competing against 50+ teams. Led full-stack development of gamified savings 
-    tracker using React/Next.js frontend integrated with Python/Flask backend and OpenAI API for personalized 
-    financial coaching. Coordinated 4-person development team through agile methodologies, delivering 5 core 
-    features and achieving 95% positive user feedback during demonstrations.`,
+    techstack: [TechIcon.PYTHON],
+    gallery: [],
+    overview: `Undergraduate Research Assistant. Built async geospatial pipelines with Python, asyncio, and GeoPandas, cutting runtime from days to minutes. Vectorized workflows for 100GB+ datasets using Pandas, eliminating manual processing and reducing memory overhead.`,
   },
   {
     id: 3,
-    title: "Web GIS Development - Geospatial Analysis Platform",
-    date: "April 2025 - Present",
+    title: "Ultra Music Festival",
+    date: "Jun 2022 - Jan 2023",
     gitURL: "",
-    techstack: [
-      TechIcon.PYTHON,
-      TechIcon.GEOPANDAS,
-      TechIcon.GOOGLEMAPS,
-      TechIcon.OPENLAYERS,
-      TechIcon.HTML,
-      TechIcon.CSS,
-      TechIcon.JAVASCRIPT,
-    ],
+    techstack: [TechIcon.REACT, TechIcon.NODEJS, TechIcon.JAVASCRIPT],
     gallery: [],
-    overview: `Architected automated geospatial analysis pipelines processing 3,143 U.S. counties using Python and
-    GeoPandas, reducing manual analysis time by 99% through Google Maps & OpenStreetMap API integration. 
-    Developed scalable data extraction workflows processing 100GB+ of geospatial datasets, improving research 
-    methodology efficiency by 75% for urban landscape analysis and contributing to peer-reviewed GIS publication.`,
+    overview: `Web Development Intern. Modernized internal logistics dashboard with React, delivering responsive interface for real-time coordination during event. Architected REST APIs with Node.js and Jest test suites to ensure stability during 3-day live event with 200k+ attendees.`,
   },
-
+  {
+    id: 4,
+    title: "Real-Time Speech Corrector (3x Winner - CUHackit 2026)",
+    date: "2026",
+    gitURL: "",
+    techstack: [TechIcon.PYTHON, TechIcon.REACT, TechIcon.FASTAPI],
+    gallery: [],
+    overview: `Built a real-time speech disfluency corrector for Zoom meetings that won Best Industry Impact, Hack for Good, and Best Use of ElevenLabs at CUHackit 2026. Architected an asynchronous audio pipeline integrating concurrent ML APIs for transcription, semantic healing, and voice cloning, achieving 1-second end-to-end latency. Engineered a video inpainting microservice to dynamically lip-sync corrected audio to live webcam feeds.`,
+  },
   {
     id: 5,
+    title: "Carbon-Aware AI Router (2x Winner - UGAHacks 11)",
+    date: "2025",
+    gitURL: "",
+    techstack: [TechIcon.PYTHON, TechIcon.REACT, TechIcon.FASTAPI, TechIcon.GCP, TechIcon.REDIS],
+    gallery: [],
+    overview: `Won Best Use of AI & Best Sustainability (UGAHacks, 515 participants) building real-time router that shifts AI workloads to the greenest global data centers, cutting carbon emissions by 95%. Built semantic cache with Redis vector similarity search and NLP compression. Designed LangGraph agentic planner with PostgreSQL deferral queue.`,
+  },
+  {
+    id: 6,
+    title: "AI Financial Literacy Chatbot (1st Place - UA Innovate Hackathon)",
+    date: "2024",
+    gitURL: "",
+    techstack: [TechIcon.REACT, TechIcon.PYTHON, TechIcon.FLASK],
+    gallery: [hackathon1, hackathon2],
+    overview: `Won 1st place and $1,000 grant by delivering AI banking MVP in 22 hours using React, OpenAI API, and Flask. Led 4-person agile team as scrum master, building OpenAI-powered financial literacy chatbot with AI budget analysis.`,
+  },
+  {
+    id: 7,
+    title: "Real-Time Discord Sentiment Bot",
+    date: "2024",
+    gitURL: "",
+    techstack: [TechIcon.JAVA, TechIcon.SPRINGBOOT, TechIcon.AWS, TechIcon.POSTGRESQL, TechIcon.DOCKER],
+    gallery: [],
+    overview: `Built AI Discord moderation bot using Spring Boot and BERT models to detect and flag toxic messages across servers. Designed PostgreSQL backend handling 10k+ messages/day; deployed via Docker on AWS EC2.`,
+  },
+  {
+    id: 8,
+    title: "AI-Powered Crisis Intervention (HackGT 12)",
+    date: "2025",
+    gitURL: "",
+    techstack: [TechIcon.SWIFT, TechIcon.PYTHON, TechIcon.FASTAPI],
+    gallery: [],
+    overview: `Engineered sub-4s latency pipeline integrating OpenCV and Gemini LLM for real-time crisis intervention responses. Developed ARKit-powered spatial interface in SwiftUI, rendering 3D breathing anchor for guided user grounding exercises.`,
+  },
+  {
+    id: 9,
     title: "Windows XP Portfolio Website",
     date: "2024",
     gitURL: "https://github.com/Korirussell/portfolio",
-    techstack: [
-      TechIcon.TYPESCRIPT,
-      TechIcon.NEXTJS,
-      TechIcon.REACT,
-      TechIcon.REDUX,
-      TechIcon.CSS,
-      TechIcon.HTML,
-    ],
+    techstack: [TechIcon.TYPESCRIPT, TechIcon.NEXTJS, TechIcon.REACT, TechIcon.CSS, TechIcon.HTML],
     gallery: [lul],
-    overview: `Created a unique portfolio website that recreates the nostalgic Windows XP interface using modern
-    web technologies. Built with TypeScript, Next.js, and React to showcase projects and experience in an 
-    interactive, memorable format. Features responsive design, smooth animations, and authentic XP-style 
-    components while maintaining accessibility and modern performance standards.`,
+    overview: `Created a unique portfolio website that recreates the nostalgic Windows XP interface using modern web technologies. Built with TypeScript, Next.js, and React to showcase projects and experience in an interactive, memorable format.`,
   },
-
 ] as WorkContent[];
 
 export const WorkAccordionContent = [
   {
     id: 1,
-    type: WorkType.PERSONAL,
-    icon: emptyfile,
-    title: "Distributed Real-Time Chat System",
+    type: WorkType.WORK,
+    icon: file,
+    title: "Tether",
     content: WorkData[WorkData.findIndex((x) => x.id === 1)],
   },
   {
     id: 2,
-    type: WorkType.HACKATHON,
-    icon: emptyfile,
-    title: "Money Trees - AI Banking App (1st Place)",
+    type: WorkType.WORK,
+    icon: file,
+    title: "Research Assistant",
     content: WorkData[WorkData.findIndex((x) => x.id === 2)],
   },
   {
     id: 3,
-    type: WorkType.SCHOOL,
+    type: WorkType.WORK,
     icon: file,
-    title: "Web GIS Development - Research",
+    title: "Web Dev Intern",
     content: WorkData[WorkData.findIndex((x) => x.id === 3)],
   },
-
+  {
+    id: 4,
+    type: WorkType.HACKATHON,
+    icon: emptyfile,
+    title: "Speech Corrector",
+    content: WorkData[WorkData.findIndex((x) => x.id === 4)],
+  },
   {
     id: 5,
-    type: WorkType.PERSONAL,
-    icon: butterfly,
-    title: "Windows XP Portfolio Website",
+    type: WorkType.HACKATHON,
+    icon: emptyfile,
+    title: "Carbon-Aware Router",
     content: WorkData[WorkData.findIndex((x) => x.id === 5)],
   },
-
+  {
+    id: 6,
+    type: WorkType.HACKATHON,
+    icon: emptyfile,
+    title: "AI Chatbot",
+    content: WorkData[WorkData.findIndex((x) => x.id === 6)],
+  },
+  {
+    id: 7,
+    type: WorkType.PERSONAL,
+    icon: emptyfile,
+    title: "Discord Sentiment Bot",
+    content: WorkData[WorkData.findIndex((x) => x.id === 7)],
+  },
+  {
+    id: 8,
+    type: WorkType.HACKATHON,
+    icon: emptyfile,
+    title: "Crisis Intervention",
+    content: WorkData[WorkData.findIndex((x) => x.id === 8)],
+  },
+  {
+    id: 9,
+    type: WorkType.PERSONAL,
+    icon: butterfly,
+    title: "Windows XP Portfolio",
+    content: WorkData[WorkData.findIndex((x) => x.id === 9)],
+  },
 ] as WorkFile[];
 
 // For My Photography Collection
