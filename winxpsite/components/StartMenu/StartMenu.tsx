@@ -23,6 +23,9 @@ import logoff from "../../assets/logoff.png";
 import shutdown from "../../assets/shutdown.png";
 import defaultprog from "../../assets/defaultprog.png";
 import printerfax from "../../assets/printerfax.png";
+import mediaplayer from "../../assets/mediaplayer.png";
+import doc from "../../assets/doc.png";
+import hardware from "../../assets/hardware.png";
 import { AppDirectory } from "@/appData";
 import { addTab } from "@/redux/tabSlice";
 import store from "@/redux/store";
@@ -126,7 +129,18 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
               icon={cmd}
               type={2}
             />
-            <StartMenuItem title="Paint" icon={paint} type={2} />
+            <StartMenuItem
+              title="Media Player"
+              onClick={() => handleRunApp(11)}
+              icon={mediaplayer}
+              type={2}
+            />
+            <StartMenuItem
+              title="Minesweeper"
+              onClick={() => handleRunApp(10)}
+              icon={paint}
+              type={2}
+            />
           </div>
           <div>
             <hr className={styles.greyhr} />
@@ -156,8 +170,9 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
           <hr className={styles.bluehr} />
           <StartMenuItem title="Control Panel" icon={clipboard} type={4} />
           <StartMenuItem
-            title="Set Program Access and Defaults"
-            icon={defaultprog}
+            title="Display Properties"
+            onClick={() => handleRunApp(13)}
+            icon={hardware}
             type={4}
           />
           <StartMenuItem title="Printer and Faxes" icon={printerfax} type={4} />

@@ -8,6 +8,7 @@ import github from "../../assets/github.png";
 import cmd from "../../assets/cmd.png";
 import users from "../../assets/users.png";
 import butterfly from "../../assets/butterfly.png";
+import mediaplayer from "../../assets/mediaplayer.png";
 import { AppDirectory } from "@/appData";
 import store from "@/redux/store";
 import { addTab, setBackBtn } from "@/redux/tabSlice";
@@ -21,11 +22,6 @@ import userprofile2 from "../../assets/userprofile2.jpg";
 import ebc1 from "../../assets/ebc1.jpeg";
 import ebc2 from "../../assets/ebc2.jpeg";
 
-const INTRO = `Hi, I'm Kori Russell, a Computer Science student at the University of Alabama based in 
-  Tuscaloosa, AL. I'm passionate about distributed systems, web development, and building innovative 
-  software solutions that solve real-world problems. I have experience in full-stack development, 
-  cybersecurity, and geospatial analysis.`;
-
 const WHYSITE = `I always love challenging myself to create something different and interesting.
 The main reason why I chose to create a website that resembles a Windows XP OS is because it represents
 the nostalgic era when many of us first fell in love with computing and programming. This retro interface
@@ -33,25 +29,16 @@ provides a unique and memorable way to showcase my portfolio while paying homage
 experience that inspired many developers. I wanted to create something that stands out and gives visitors
 a fun, interactive experience while exploring my work.`;
 
-const INTERESTS = `Beyond coding and software development, I'm passionate about cybersecurity and have 
-hands-on experience from my internship with the U.S. Department of Defense. I enjoy working on distributed 
-systems and network programming challenges. I also have a strong interest in geospatial analysis and GIS 
-development, which combines my love for data science with practical applications in geography and urban planning.`;
+const INTERESTS = `I love programming. Fueled by a passion for creative problem-solving, I build full-stack solutions for the things I actually care about. I specialize in end-to-end architecture using React, Java, and Spring Boot, and I've picked up 8 hackathon awards along the way.`;
 
-const INTERESTS2 = `I'm also deeply involved in hackathons and competitive programming. I recently won 1st place 
-in the Fintech category at the UA Innovate Hackathon, where my team and I built an AI-powered banking application 
-in just 22 hours. These events push me to think creatively under pressure and collaborate effectively with diverse 
-teams to deliver functional prototypes quickly.`;
+const INTERESTS2 = `I'm a CS major at the University of Alabama, but I was actually born in Germany. When I'm not at the keyboard, I'm usually playing basketball or soccer—fun fact: I was captain of my varsity soccer team and still spend a lot of time on the pitch. I also really love producing music, mostly making R&B, Hip-Hop, and experimenting with new sounds in my spare time.`;
 
-const INTERESTS3 = `When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects. 
-I'm particularly interested in the intersection of technology and real-world applications, whether that's through 
-web GIS development for research purposes or building systems that can handle thousands of concurrent users. I also 
-love learning about emerging technologies in distributed systems and how they can be applied to solve scalability 
-challenges in modern applications.
-`;
+const INTERESTS3 = `Right now, I'm spending most of my time developing JobDog, a gamified tech job board, and my iOS app, Tether.
+
+Feel free to hit me up if you want to chat or if you're looking to build something cool together.`;
 
 interface props {
-  id: number;
+  id: string | number;
 }
 
 const Welcome = ({ id }: props) => {
@@ -141,6 +128,12 @@ const Welcome = ({ id }: props) => {
                 onClick={() => handleRunApp(1)}
               />
               <WelcomeIcon
+                img={mediaplayer}
+                text={"Media Player"}
+                tooltip="Listen to some tunes!"
+                onClick={() => handleRunApp(11)}
+              />
+              <WelcomeIcon
                 img={gallery}
                 text={"My Photography Collection"}
                 tooltip="Click to view!"
@@ -185,7 +178,6 @@ const Welcome = ({ id }: props) => {
               />
             </div>
             <div className={styles.text_col}>
-              <p className={styles.subtitle}>{INTRO}</p>
               <h3 className={styles.subtitle_header}>
                 Why a personal website like this?
               </h3>

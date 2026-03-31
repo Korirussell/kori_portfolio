@@ -18,7 +18,7 @@ interface props {
   title: string;
   icon: StaticImageData;
   programType: App;
-  id: number;
+  id: string | number;
 }
 
 const WinToolBar = ({ title, icon, programType, id }: props) => {

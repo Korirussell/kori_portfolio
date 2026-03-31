@@ -4,7 +4,7 @@ import Image from "next/image";
 import { removeTab } from "@/redux/tabSlice";
 import store from "@/redux/store";
 interface Props {
-  id: number;
+  id: string | number;
   message: string;
   icon: StaticImageData;
 }

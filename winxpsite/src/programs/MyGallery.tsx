@@ -13,7 +13,7 @@ import sliderleft from "../../assets/slider_left.png";
 import sliderright from "../../assets/slider_right.png";
 
 interface Props {
-  id: number;
+  id: string | number;
 }
 
 const MyGallery = ({ id }: Props) => {

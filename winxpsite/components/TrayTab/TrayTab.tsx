@@ -12,6 +12,11 @@ const TrayTab = ({ Icon, title, onFocus, isFocused }: props) => {
   return (
     <div
       onClick={onFocus}
+      onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && onFocus()}
+      tabIndex={0}
+      role="button"
+      aria-label={`${title} window`}
+      aria-pressed={isFocused ? true : false}
       className={
         isFocused ? styles.tab_container_focused : styles.tab_container
       }

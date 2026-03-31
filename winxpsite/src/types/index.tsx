@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export type Tab = {
-  id: number;
+  id: string | number;
   title: string;
   message: string;
   Icon: StaticImageData;
@@ -16,11 +16,12 @@ export type RootState = {
   tab: {
     tray: Tab[];
     id: number;
-    currentFocusedTab: number;
+    currentFocusedTab: string | number;
     currentZIndex: number;
   };
   system: {
     backactive: boolean;
+    theme: "luna-blue" | "olive-green" | "silver";
   };
 };
 
@@ -32,14 +33,16 @@ export enum App {
   MYBLOG,
   ERROR,
   INFO,
-  HELP,
   WARNING,
+  HELP,
   WELCOME,
+  MINESWEEPER,
+  MEDIAPLAYER,
+  DISPLAYPROPS,
 }
 
 export enum WorkType {
   PERSONAL = "Personal Projects",
-  SCHOOL = "Research Projects",
   HACKATHON = "Hackathons",
   WORK = "Work Experience",
 }
@@ -60,6 +63,9 @@ export type WorkContent = {
   gallery: StaticImageData[];
   techstack: string[];
   overview: string;
+  demoUrl?: string;
+  videoUrl?: string;
+  type?: WorkType;
 };
 
 export type GalleryImage = {

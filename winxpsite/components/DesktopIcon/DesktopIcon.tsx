@@ -33,6 +33,13 @@ const DesktopIcon = (props: {
         style={{ top: props.appID * 90 - 40 }}
         onDoubleClick={props.doubleClick}
         onClick={HighlightIcon}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") props.doubleClick();
+          if (e.key === " ") HighlightIcon();
+        }}
+        tabIndex={0}
+        role="button"
+        aria-label={`Open ${props.title}`}
         className={styles.icon}
         ref={ref}
       >

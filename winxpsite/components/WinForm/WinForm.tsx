@@ -18,7 +18,7 @@ import ResizableComponent from "@/util/Resizer/Resizer";
 
 const unfocusedAdjustment = "brightness(1.05)";
 const WinForm = (props: {
-  id: number;
+  id: string | number;
   title: string;
   message: string;
   children: ReactNode;
@@ -122,6 +122,10 @@ const WinForm = (props: {
             {!props.prompt && (
               <div
                 onClick={handleMinimize}
+                onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && handleMinimize()}
+                tabIndex={0}
+                role="button"
+                aria-label="Minimize window"
                 style={{
                   filter: currTabID == props.id ? "" : unfocusedAdjustment,
                 }}
@@ -131,6 +135,10 @@ const WinForm = (props: {
             {!props.prompt && (
               <div
                 onClick={handleMaximize}
+                onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && handleMaximize()}
+                tabIndex={0}
+                role="button"
+                aria-label={isMaximized ? "Restore window" : "Maximize window"}
                 style={{
                   filter: currTabID == props.id ? "" : unfocusedAdjustment,
                 }}
@@ -139,6 +147,10 @@ const WinForm = (props: {
             )}
             <div
               onClick={handleClose}
+              onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && handleClose()}
+              tabIndex={0}
+              role="button"
+              aria-label="Close window"
               style={{
                 filter: currTabID == props.id ? "" : unfocusedAdjustment,
               }}

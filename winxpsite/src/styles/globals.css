@@ -107,6 +107,38 @@ a {
   }
 }
 
+/* ── Theme Variables ── */
+:root,
+.theme-luna-blue {
+  --theme-titlebar-start: #0a246a;
+  --theme-titlebar-end: #3a6ea5;
+  --theme-titlebar-accent: #245edb;
+  --theme-startbtn-filter: none;
+  --theme-taskbar-bg: linear-gradient(180deg, #1f3e7c 0%, #3c6dbf 40%, #1f3e7c 100%);
+  --theme-taskbar-border: #1a2f6a;
+  --theme-active-tab: #3c6dbf;
+}
+
+.theme-olive-green {
+  --theme-titlebar-start: #3c4b1e;
+  --theme-titlebar-end: #6b7c38;
+  --theme-titlebar-accent: #7b9d3c;
+  --theme-startbtn-filter: hue-rotate(100deg) saturate(0.8);
+  --theme-taskbar-bg: linear-gradient(180deg, #3c4b1e 0%, #6b7c38 40%, #3c4b1e 100%);
+  --theme-taskbar-border: #2a3812;
+  --theme-active-tab: #6b7c38;
+}
+
+.theme-silver {
+  --theme-titlebar-start: #5a5a5a;
+  --theme-titlebar-end: #909090;
+  --theme-titlebar-accent: #777;
+  --theme-startbtn-filter: grayscale(1) brightness(1.2);
+  --theme-taskbar-bg: linear-gradient(180deg, #6a6a6a 0%, #aaaaaa 40%, #6a6a6a 100%);
+  --theme-taskbar-border: #444;
+  --theme-active-tab: #888;
+}
+
 /* Mobile Responsiveness Improvements */
 @media (max-width: 768px) {
   /* Ensure mobile viewport is properly handled */

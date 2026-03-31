@@ -41,7 +41,7 @@ const StartBar = () => {
   );
   const currzIndex = useSelector((state: RootState) => state.tab.currentZIndex);
 
-  const handleTabFocus = (tabID: number) => {
+  const handleTabFocus = (tabID: string | number) => {
     if (currTabID === tabID) {
       store.dispatch(minimizeTab({ id: tabID }));
       store.dispatch(setFocusedTab({ id: -1 }));
@@ -53,7 +53,7 @@ const StartBar = () => {
     }
   };
 
-  const renderTabs = (title: String, Icon: StaticImageData, id: number) => {
+  const renderTabs = (title: String, Icon: StaticImageData, id: string | number) => {
     return (
       <TrayTab
         key={id}
@@ -97,6 +97,11 @@ const StartBar = () => {
         <div ref={ref}>
           <div
             onClick={handleOpenStartMenu}
+            onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && handleOpenStartMenu()}
+            tabIndex={0}
+            role="button"
+            aria-label="Start"
+            aria-expanded={startMenuOpen}
             className={startMenuOpen ? styles.startbtn_active : styles.startbtn}
           ></div>
           {startMenuOpen && <StartMenu menuControl={setStartMenuOpen} />}

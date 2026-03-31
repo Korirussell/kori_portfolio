@@ -14,6 +14,10 @@ import cmd from "../../assets/cmd.png";
 import mycomputer from "../../assets/mycomputer.png";
 import gallery from "../../assets/folder_image.png";
 import outlook from "../../assets/outlook.png";
+import mediaplayer from "../../assets/mediaplayer.png";
+import doc from "../../assets/doc.png";
+import hardware from "../../assets/hardware.png";
+import paint from "../../assets/paint.png";
 import dsta from "../../assets/workaccordion/dsta.png";
 import gdsc from "../../assets/workaccordion/gdsc.png";
 import file from "../../assets/workaccordion/file.png";
@@ -218,13 +222,54 @@ export const AppDirectory: Map<number, Tab> = new Map([
       backBtnActive: false,
     },
   ],
+  [
+    10,
+    {
+      id: 0,
+      title: "Minesweeper",
+      message: "",
+      Icon: paint,
+      isMinimized: false,
+      zIndex: 0,
+      program: App.MINESWEEPER,
+      prompt: false,
+      backBtnActive: false,
+    },
+  ],
+  [
+    11,
+    {
+      id: 0,
+      title: "Media Player",
+      message: "",
+      Icon: mediaplayer,
+      isMinimized: false,
+      zIndex: 0,
+      program: App.MEDIAPLAYER,
+      prompt: false,
+      backBtnActive: false,
+    },
+  ],
+  [
+    13,
+    {
+      id: 0,
+      title: "Display Properties",
+      message: "",
+      Icon: hardware,
+      isMinimized: false,
+      zIndex: 0,
+      program: App.DISPLAYPROPS,
+      prompt: false,
+      backBtnActive: false,
+    },
+  ],
 ]);
 
 export const WorkAccordionTitles = [
   WorkType.WORK,
   WorkType.HACKATHON,
   WorkType.PERSONAL,
-  WorkType.SCHOOL,
 ];
 
 export const GalleryAccordionTitles = ["Details"];
@@ -232,15 +277,33 @@ export const GalleryAccordionTitles = ["Details"];
 export const WorkData = [
   {
     id: 1,
+    title: "Agentic Digital Audio Workstation (2x Winner – VandyHacks 12)",
+    date: "2025",
+    gitURL: "https://devpost.com/software/wonder-092csj",
+    techstack: [TechIcon.NEXTJS, TechIcon.AWS, TechIcon.MONGODB],
+    gallery: [],
+    overview: `Engineered 'Cursor for music production', winning 1st Place Overall and Best Use of ElevenLabs at Vanderbilt. Architected a DSP engine, leveraging AWS/MongoDB tagged sample storage to drive context-aware Gemini AI and Snowflake pipelines.`,
+  },
+  {
+    id: 2,
+    title: "JobDog: Live Job Board & Resume Evaluator",
+    date: "2025",
+    gitURL: "https://jobdog.dev/",
+    techstack: [TechIcon.GO, TechIcon.JAVA, TechIcon.NEXTJS, TechIcon.SPRINGBOOT, TechIcon.REDIS, TechIcon.DOCKER],
+    gallery: [],
+    overview: `Deployed a live microservices platform, streaming real-time job feeds via WebSockets with sub-100ms latency. Engineered a concurrent data pipeline, extracting and upserting 5,000+ daily job listings from enterprise APIs. Built an LLM parsing engine with TF-IDF heuristics, scoring job-fit in sub 4s and reducing API costs by 80%.`,
+  },
+  {
+    id: 3,
     title: "Tether",
     date: "Aug 2025 - Present",
     gitURL: "",
-    techstack: [TechIcon.SWIFT, TechIcon.SUPABASE, TechIcon.PYTHON, TechIcon.NEXTJS],
+    techstack: [TechIcon.SWIFT, TechIcon.SUPABASE, TechIcon.PYTHON],
     gallery: [],
     overview: `Founder & Software Engineer. Built location-based social productivity app using SwiftUI and Core Bluetooth, serving 150+ active university users. Engineered Supabase backend and FamilyControls integration to automate app blocking during focused study sessions.`,
   },
   {
-    id: 2,
+    id: 4,
     title: "The University of Alabama",
     date: "Apr 2025 - Aug 2025",
     gitURL: "",
@@ -249,7 +312,7 @@ export const WorkData = [
     overview: `Undergraduate Research Assistant. Built async geospatial pipelines with Python, asyncio, and GeoPandas, cutting runtime from days to minutes. Vectorized workflows for 100GB+ datasets using Pandas, eliminating manual processing and reducing memory overhead.`,
   },
   {
-    id: 3,
+    id: 5,
     title: "Ultra Music Festival",
     date: "Jun 2022 - Jan 2023",
     gitURL: "",
@@ -258,25 +321,25 @@ export const WorkData = [
     overview: `Web Development Intern. Modernized internal logistics dashboard with React, delivering responsive interface for real-time coordination during event. Architected REST APIs with Node.js and Jest test suites to ensure stability during 3-day live event with 200k+ attendees.`,
   },
   {
-    id: 4,
+    id: 6,
     title: "Real-Time Speech Corrector (3x Winner - CUHackit 2026)",
     date: "2026",
-    gitURL: "",
+    gitURL: "https://devpost.com/software/clarity-yn4hwx",
     techstack: [TechIcon.PYTHON, TechIcon.REACT, TechIcon.FASTAPI],
     gallery: [],
     overview: `Built a real-time speech disfluency corrector for Zoom meetings that won Best Industry Impact, Hack for Good, and Best Use of ElevenLabs at CUHackit 2026. Architected an asynchronous audio pipeline integrating concurrent ML APIs for transcription, semantic healing, and voice cloning, achieving 1-second end-to-end latency. Engineered a video inpainting microservice to dynamically lip-sync corrected audio to live webcam feeds.`,
   },
   {
-    id: 5,
+    id: 7,
     title: "Carbon-Aware AI Router (2x Winner - UGAHacks 11)",
     date: "2025",
-    gitURL: "",
+    gitURL: "https://devpost.com/software/sorcer",
     techstack: [TechIcon.PYTHON, TechIcon.REACT, TechIcon.FASTAPI, TechIcon.GCP, TechIcon.REDIS],
     gallery: [],
     overview: `Won Best Use of AI & Best Sustainability (UGAHacks, 515 participants) building real-time router that shifts AI workloads to the greenest global data centers, cutting carbon emissions by 95%. Built semantic cache with Redis vector similarity search and NLP compression. Designed LangGraph agentic planner with PostgreSQL deferral queue.`,
   },
   {
-    id: 6,
+    id: 8,
     title: "AI Financial Literacy Chatbot (1st Place - UA Innovate Hackathon)",
     date: "2024",
     gitURL: "",
@@ -285,7 +348,7 @@ export const WorkData = [
     overview: `Won 1st place and $1,000 grant by delivering AI banking MVP in 22 hours using React, OpenAI API, and Flask. Led 4-person agile team as scrum master, building OpenAI-powered financial literacy chatbot with AI budget analysis.`,
   },
   {
-    id: 7,
+    id: 9,
     title: "Real-Time Discord Sentiment Bot",
     date: "2024",
     gitURL: "",
@@ -294,7 +357,7 @@ export const WorkData = [
     overview: `Built AI Discord moderation bot using Spring Boot and BERT models to detect and flag toxic messages across servers. Designed PostgreSQL backend handling 10k+ messages/day; deployed via Docker on AWS EC2.`,
   },
   {
-    id: 8,
+    id: 10,
     title: "AI-Powered Crisis Intervention (HackGT 12)",
     date: "2025",
     gitURL: "",
@@ -303,7 +366,7 @@ export const WorkData = [
     overview: `Engineered sub-4s latency pipeline integrating OpenCV and Gemini LLM for real-time crisis intervention responses. Developed ARKit-powered spatial interface in SwiftUI, rendering 3D breathing anchor for guided user grounding exercises.`,
   },
   {
-    id: 9,
+    id: 11,
     title: "Windows XP Portfolio Website",
     date: "2024",
     gitURL: "https://github.com/Korirussell/portfolio",
@@ -316,66 +379,80 @@ export const WorkData = [
 export const WorkAccordionContent = [
   {
     id: 1,
-    type: WorkType.WORK,
-    icon: file,
-    title: "Tether",
+    type: WorkType.HACKATHON,
+    icon: emptyfile,
+    title: "Agentic DAW",
     content: WorkData[WorkData.findIndex((x) => x.id === 1)],
   },
   {
     id: 2,
-    type: WorkType.WORK,
-    icon: file,
-    title: "Research Assistant",
+    type: WorkType.PERSONAL,
+    icon: emptyfile,
+    title: "JobDog",
     content: WorkData[WorkData.findIndex((x) => x.id === 2)],
   },
   {
     id: 3,
     type: WorkType.WORK,
     icon: file,
-    title: "Web Dev Intern",
+    title: "Tether",
     content: WorkData[WorkData.findIndex((x) => x.id === 3)],
   },
   {
     id: 4,
-    type: WorkType.HACKATHON,
-    icon: emptyfile,
-    title: "Speech Corrector",
+    type: WorkType.WORK,
+    icon: file,
+    title: "Research Assistant",
     content: WorkData[WorkData.findIndex((x) => x.id === 4)],
   },
   {
     id: 5,
-    type: WorkType.HACKATHON,
-    icon: emptyfile,
-    title: "Carbon-Aware Router",
+    type: WorkType.WORK,
+    icon: file,
+    title: "Web Dev Intern",
     content: WorkData[WorkData.findIndex((x) => x.id === 5)],
   },
   {
     id: 6,
     type: WorkType.HACKATHON,
     icon: emptyfile,
-    title: "AI Chatbot",
+    title: "Speech Corrector",
     content: WorkData[WorkData.findIndex((x) => x.id === 6)],
   },
   {
     id: 7,
-    type: WorkType.PERSONAL,
+    type: WorkType.HACKATHON,
     icon: emptyfile,
-    title: "Discord Sentiment Bot",
+    title: "Carbon-Aware Router",
     content: WorkData[WorkData.findIndex((x) => x.id === 7)],
   },
   {
     id: 8,
     type: WorkType.HACKATHON,
     icon: emptyfile,
-    title: "Crisis Intervention",
+    title: "UA Innovate",
     content: WorkData[WorkData.findIndex((x) => x.id === 8)],
   },
   {
     id: 9,
     type: WorkType.PERSONAL,
+    icon: emptyfile,
+    title: "Discord Sentiment Bot",
+    content: WorkData[WorkData.findIndex((x) => x.id === 9)],
+  },
+  {
+    id: 10,
+    type: WorkType.HACKATHON,
+    icon: emptyfile,
+    title: "Crisis Intervention",
+    content: WorkData[WorkData.findIndex((x) => x.id === 10)],
+  },
+  {
+    id: 11,
+    type: WorkType.PERSONAL,
     icon: butterfly,
     title: "Windows XP Portfolio",
-    content: WorkData[WorkData.findIndex((x) => x.id === 9)],
+    content: WorkData[WorkData.findIndex((x) => x.id === 11)],
   },
 ] as WorkFile[];
 

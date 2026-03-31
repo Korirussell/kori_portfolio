@@ -2,6 +2,7 @@ import { AppDirectory } from "@/appData";
 import { App, Tab } from "@/types";
 import { createSlice } from "@reduxjs/toolkit";
 import help from "../../assets/dialog/help.png";
+import cmd from "../../assets/cmd.png";
 
 // Redux Reducer for Tab/Windows State Mangagement
 export const tabtraySlice = createSlice({
@@ -9,20 +10,31 @@ export const tabtraySlice = createSlice({
   initialState: {
     tray: [
       {
-        id: 0,
+        id: "init-welcome",
         title: "Quick Start Guide",
         message: "",
         Icon: help,
         isMinimized: false,
-        zIndex: 0,
+        zIndex: 1,
         program: App.WELCOME,
+        prompt: false,
+        backBtnActive: false,
+      },
+      {
+        id: "init-mywork",
+        title: "My Work",
+        message: "",
+        Icon: cmd,
+        isMinimized: false,
+        zIndex: 0,
+        program: App.MYWORK,
         prompt: false,
         backBtnActive: false,
       },
     ] as Tab[],
     id: 0,
-    currentFocusedTab: -1,
-    currentZIndex: 0,
+    currentFocusedTab: "init-welcome" as string | number,
+    currentZIndex: 2,
   },
   reducers: {
     addTab: (state, action) => {
