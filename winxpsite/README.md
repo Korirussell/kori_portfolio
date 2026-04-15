@@ -1,15 +1,10 @@
-## My Personal Portfolio Website Based off Windows XP Styling
+## Kori Russell's Personal Portfolio Website Based off Windows XP Styling
 
-This Website is built with Next.JS, Redux, HTML, CSS and whatever that make sense
+This Website is built with Next.JS, Redux, HTML, CSS and TypeScript
 
-Built it for nostalgia and as a tribute to my software dev journey since my visual basic days
-
-### View My Website Here: [pohwp.dev](https://pohwp.dev)
+Built for nostalgia and as a tribute to the classic Windows XP era that inspired many developers
 
 Currently Deployed on Vercel
-
-![winxp](https://user-images.githubusercontent.com/7589432/223458352-89742c9d-3528-4608-a124-f6bd3a9d3ef5.gif)
-
 
 More work still needs to be done.
 

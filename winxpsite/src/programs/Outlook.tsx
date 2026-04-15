@@ -23,8 +23,9 @@ const Outlook = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const API_KEY = process.env.NEXT_PUBLIC_MAILGUN_API;
-  const FROM_EMAIL = "feedback@pohwp.dev";
+  const FROM_EMAIL = process.env.NEXT_PUBLIC_FROM_EMAIL || "noreply@example.com";
   const TO_EMAIL = process.env.NEXT_PUBLIC_ADMIN_EMAIL;
+  const MAILGUN_DOMAIN = process.env.NEXT_PUBLIC_MAILGUN_DOMAIN || "example.com";
   const axios = require("axios");
   const captchaRef = React.useRef(null);
   const emailRef = React.useRef<HTMLInputElement>(null);
@@ -34,7 +35,7 @@ const Outlook = () => {
     if (from !== "" && subject !== "") {
       await axios({
         method: "post",
-        url: `https://api.mailgun.net/v3/pohwp.dev/messages`,
+        url: `https://api.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`,
         auth: {
           username: "api",
           password: API_KEY,
